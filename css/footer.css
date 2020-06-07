@@ -13,6 +13,10 @@ footer {
   color: var(--text-footer-secondary);
 }
 
+.bottom-contacts:hover {
+  color: var(--akcent-color);
+}
+
 /* ------- Стилизацмя социальных иконок ---------*/
 .social-text {
   text-transform: uppercase;
