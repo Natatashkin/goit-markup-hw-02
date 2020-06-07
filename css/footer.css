@@ -18,13 +18,11 @@ footer {
 }
 
 /* ------- Стилизацмя социальных иконок ---------*/
-.social-text {
-  text-transform: uppercase;
-}
 
 /* --------- Стилизация формы подписки----------- */
 
-label[for="email"] {
+label[for="email"],
+.social-text {
   text-transform: uppercase;
 }
 
