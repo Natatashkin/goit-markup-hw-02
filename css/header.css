@@ -1,0 +1,52 @@
+/* -------Стили Логотипа-------- */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: var(--akcent-color);
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-top {
+  color: #000000;
+}
+
+.logo-bottom {
+  color: #ffffff;
+}
+
+/* ====== Стилизация Шапки сайта ========= */
+
+/* --------------Стилизация Меню сайта--------- */
+
+.main-menu {
+  list-style: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+.link {
+  color: #212121;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--akcent-color);
+}
+/* ------Стилизация блока контактов в шапке------- */
+
+.top-сontacts {
+  color: var(--text-color);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.top-сontacts:hover,
+.top-сontacts:focus {
+  color: var(--akcent-color);
+}

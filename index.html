@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <title>Студия</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
@@ -11,69 +20,76 @@
     <header>
       <nav class="top-nav">
         <!-- Логотип сайта -->
-        <a href="./index.html">
-          Web Studio
+        <a
+          href="./index.html"
+          aria-label="Логотип компании"
+          class="logo"
+        >
+          <span>Web</span>
+          <span class="logo-top">Studio</span>
         </a>
 
         <!-- Меню сайта -->
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="main-menu">
+          <li><a href="./index.html" class="link">Студия</a></li>
+          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li><a href="#" class="link">Контакты</a></li>
         </ul>
       </nav>
 
       <!-- Контакты: телефон и почта -->
       <address>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="top-сontacts"
+          >info@devstudio.com</a
+        >
+        <a href="tel:+380961111111" class="top-сontacts">+38 096 111 11 11</a>
       </address>
     </header>
     <!-- основной информационный бок страницы -->
     <main>
       <!-- Блок-герой -->
       <div class="hero">
-        <section>
-          <h1>эффективные решения для вашего бизнеса</h1>
-          <a href="#">Заказать услугу</a>
+        <section class="cta">
+          <h1 class="cta-title">эффективные решения </br>для вашего бизнеса</h1>
+          <a href="#" class="cta-button">Заказать услугу</a>
         </section>
       </div>
 
       <!-- Секция преимущества -->
-      <section>
-        <h2>Features</h2>
-        <ul>
-          <li>
-            <a href="#">
-              <h3>Внимание к деталям</h3>
-              <p>
+      <section class="section">
+        <h2 class="section-title hidden">Наши преимущества</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            <a href="#" class="section-card">
+              <h3 class="section-subtitle">Внимание к деталям</h3>
+              <p class="section-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <h3>Пунктуальность</h3>
-              <p>
+          <li class="section-item">
+            <a href="#" class="section-card">
+              <h3 class="section-subtitle">Пунктуальность</h3>
+              <p class="section-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <h3>Планирование</h3>
-              <p>
+          <li class="section-item">
+            <a href="#" class="section-card">
+              <h3 class="section-subtitle">Планирование</h3>
+              <p class="section-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <h3>Современные технологии</h3>
-              <p>
+          <li class="section-item">
+            <a href="#" class="section-card">
+              <h3 class="section-subtitle">Современные технологии</h3>
+              <p class="section-text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -84,119 +100,119 @@
       </section>
 
       <!-- Секция Чем мы занимаемся-->
-      <section>
-        <h2>Чем мы занимаемся</h2>
+      <section class="section">
+        <h2 class="section-title">Чем мы занимаемся</h2>
         <!-- в данном разделе мне не ясно поведение блоков активные они или нет, есть ли переход на другую страницу. По-этому я сделала через ссылки. Если же нет, тогда без ссылок. -->
-        <ul>
-          <li>
-            <a href="#">
+        <ul class="section-list">
+          <li class="section-item wide-card">
+            <a href="#" class="section-card wide-card">
               <img
                 src="./images/img-decktop.jpg"
                 alt="Десктопные приложения"
                 width="370"
                 height="294"
               />
-              <h3>Десктопные приложения</h3>
+              <h3 class="section-subtitle secondary-color">Десктопные приложения</h3>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="section-item wide-card">
+            <a href="#" class="section-card wide-card">
               <img
                 src="./images/mobile-app.jpg"
                 alt="Мобильные приложения"
                 width="370"
                 height="294"
               />
-              <h3>Мобильные приложения</h3>
+              <h3 class="section-subtitle secondary-color">Мобильные приложения</h3>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="section-item wide-card">
+            <a href="#" class="section-card wide-card">
               <img
                 src="./images/design.jpg"
                 alt="Дизайнерские решения"
                 width="370"
                 height="294"
               />
-              <h3>Дизайнерские решения</h3>
+              <h3 class="section-subtitle secondary-color">Дизайнерские решения</h3>
             </a>
           </li>
         </ul>
       </section>
 
       <!-- Секция Наша команда -->
-      <section>
-        <h2>Наша команда</h2>
-        <ul lang="en">
-          <li>
-            <a href="#">
+      <section class="section">
+        <h2 class="section-title">Наша команда</h2>
+        <ul lang="ru-en" class="section-list">
+          <li class="section-item">
+            <a href="#" class="section-card team">
               <img
                 src="./images/John-Smith.jpg"
-                alt="photo John Smith"
+                alt="фотография Николая Кучеренко"
                 width="270"
                 height="260"
               />
-              <h3>John Smith</h3>
-              <p>Product Designer</p>
-              <ul>
-                <li><a href="#">instagram</a></li>
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">linkedin</a></li>
+              <h3 class="section-subtitle team">Николай Кучеренко</h3>
+              <p class="section-text team">Product Designer</p>
+              <ul class="social-list">
+                <li><a href="#" class="social instagram-link" aria-label="Instagram link">instagram</a></li>
+                <li><a href="#" class="social twitter-link" aria-label="Twitter link">twitter</a></li>
+                <li><a href="#" class="social facebook-link" aria-label="Facebook link">facebook</a></li>
+                <li><a href="#" class="social linkedin-link" aria-label="LinkedIn link">linkedin</a></li>
               </ul>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="section-item">
+            <a href="" class="section-card team">
               <img
                 src="./images/Marta-Stewart.jpg"
-                alt="photo Marta Stewart"
+                alt="фотография Ольги Ивановой"
                 width="270"
                 height="260"
               />
-              <h3>Marta Stewart</h3>
-              <p>Frontend Developer</p>
-              <ul>
-                <li><a href="#" aria-label="Instagram link">instagram</a></li>
-                <li><a href="#" aria-label="Twitter link">twitter</a></li>
-                <li><a href="#" aria-label="Facebook link">facebook</a></li>
-                <li><a href="#" aria-label="LinkedIn link">linkedin</a></li>
+              <h3 class="section-subtitle team">Ольга Иванова</h3>
+              <p  class="section-text team">Frontend Developer</p>
+              <ul class="social-list">
+                <li><a href="#" class="social instagram-link" aria-label="Instagram link">instagram</a></li>
+                <li><a href="#" class="social twitter-link" aria-label="Twitter link">twitter</a></li>
+                <li><a href="#" class="social facebook-link" aria-label="Facebook link">facebook</a></li>
+                <li><a href="#" class="social linkedin-link" aria-label="LinkedIn link">linkedin</a></li>
               </ul>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="section-item">
+            <a href="#" class="section-card team">
               <img
                 src="./images/Robert-Jakis.jpg"
-                alt="photo Robert Jakis"
+                alt="фотография Андрея Шевченко"
                 width="270"
                 height="260"
               />
-              <h3>Robert Jakis</h3>
-              <p>Marketing</p>
-              <ul>
-                <li><a href="#" aria-label="Instagram link">instagram</a></li>
-                <li><a href="#" aria-label="Twitter link">twitter</a></li>
-                <li><a href="#" aria-label="Facebook link">facebook</a></li>
-                <li><a href="#" aria-label="LinkedIn link">linkedin</a></li>
+              <h3 class="section-subtitle team">Андрей Шевченко</h3>
+              <p  class="section-text team">Marketing</p>
+              <ul class="social-list">
+                <li><a href="#" class="social instagram-link" aria-label="Instagram link">instagram</a></li>
+                <li><a href="#" class="social twitter-link" aria-label="Twitter link">twitter</a></li>
+                <li><a href="#" class="social facebook-link" aria-label="Facebook link">facebook</a></li>
+                <li><a href="#" class="social linkedin-link" aria-label="LinkedIn link">linkedin</a></li>
               </ul>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="section-item">
+            <a href="" class="section-card team">
               <img
                 src="./images/Martin-Doe.jpg"
-                alt="photo Martin Doe"
+                alt="фотография Ивана Николаева"
                 width="270"
                 height="260"
               />
-              <h3>Martin Doe</h3>
-              <p>UI Designer</p>
-              <ul>
-                <li><a href="#" aria-label="Instagram link">instagram</a></li>
-                <li><a href="#" aria-label="Twitter link">twitter</a></li>
-                <li><a href="#" aria-label="Facebook link">facebook</a></li>
-                <li><a href="#" aria-label="LinkedIn link">linkedin</a></li>
+              <h3 class="section-subtitle team">Иван Николаев</h3>
+              <p  class="section-text team">UI Designer</p>
+              <ul class="social-list">
+                <li><a href="#" class="social instagram-link" aria-label="Instagram link">instagram</a></li>
+                <li><a href="#" class="social twitter-link" aria-label="Twitter link">twitter</a></li>
+                <li><a href="#" class="social facebook-link" aria-label="Facebook link">facebook</a></li>
+                <li><a href="#" class="social linkedin-link" aria-label="LinkedIn link">linkedin</a></li>
               </ul>
             </a>
           </li>
@@ -204,15 +220,15 @@
       </section>
 
       <!-- Секция Постоянные клиенты -->
-      <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
-          <li><a href="#">YA & CO</a></li>
-          <li><a href="#">Company tagline here</a></li>
-          <li><a href="#">Company</a></li>
-          <li><a href="#">FOSTER PETERS</a></li>
-          <li><a href="#">Brand</a></li>
-          <li><a href="#">Company Tag line</a></li>
+      <section  class="section">
+        <h2 class="section-title">Постоянные клиенты</h2>
+        <ul class="section-list">
+          <li><a href="#" class="section-logo">YA & CO</a></li>
+          <li><a href="#" class="section-logo">FOSTER PETERS</a></li>
+          <li><a href="#" class="section-logo">Company</a></li>
+          <li><a href="#" class="section-logo">Company tagline here</a></li>
+          <li><a href="#" class="section-logo">Brand</a></li>
+          <li><a href="#" class="section-logo">Company Tag line</a></li>
         </ul>
       </section>
     </main>
@@ -221,25 +237,31 @@
     <footer>
       <!-- подвал контакты -->
       <div class="bottom-address">
-        <a href="">
-          Web Studio
+        <a
+          href="./index.html"
+          aria-label="Логотип компании"
+          class="logo"
+        >
+          <span>Web</span>
+          <span class="logo-bottom">Studio</span>
         </a>
         <address>
           г. Киев, пр-т Леси Украинки, 26
         </address>
         <address>
-          <a href="mailto:info@example.com">info@example.com</a><br />
-          <a href="tel:+380991111111">+38 099 111 11 11</a>
+          <a href="mailto:info@example.com" class="bottom-contacts">info@example.com</a><br />
+          <a href="tel:+380991111111" class="bottom-contacts">+38 099 111 11 11</a>
         </address>
       </div>
 
       <!-- подвал соцсети -->
-      <div class="social">
-        <ul>
-          <li><a href="#" aria-label="Instagram link">instagram</a></li>
-          <li><a href="#" aria-label="Twitter link">twitter</a></li>
-          <li><a href="#" aria-label="Facebook link">facebook</a></li>
-          <li><a href="#" aria-label="LinkedIn link">linkedin</a></li>
+      <div class="social-links">
+        <p class="social-text">присоединяйтесь</p>
+        <ul class="social-list">
+          <li class="social-item"><a href="#" class="social social-instagram" aria-label="Instagram link">instagram</a></li>
+          <li class="social-item"><a href="#" class="social social-twitter" aria-label="Twitter link">twitter</a></li>
+          <li class="social-item"><a href="#" class="social social-facebook" aria-label="Facebook link">facebook</a></li>
+          <li class="social-item"><a href="#" class="social social-linkedin" aria-label="LinkedIn link">linkedin</a></li>
         </ul>
       </div>
 
@@ -248,13 +270,13 @@
         <form action="" method="post">
           <label for="email">Подпишитесь на рассылку</label>
           <input type="email" name="email" id="email" placeholder="E-mail" />
-          <input type="button" value="Подписаться" />
+          <button type="submit">Подписаться</button>
         </form>
       </div>
 
       <!-- Горизонтальная линия в подвале и права собственности -->
-      <hr />
-      <p>2020 &#10072; Developed by GoIT Students</p>
+      <p class="copy-rights">2020 &#10072; Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
+ 
